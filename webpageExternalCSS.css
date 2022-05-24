@@ -1,0 +1,265 @@
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    width: 100%;
+    background: #ccc;
+    padding: 20px 20vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  
+  /*Nav bar CSS*/
+  nav {
+    background: white;
+    
+  }
+  
+  .main-nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px dimgrey;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+  }
+  .nav-item {
+    text-decoration: none;
+    color:dimgrey;
+    padding-right: 30px;
+    font-size: 22px;
+    font-weight: 300px;
+    transition: 0.25s ease-in;
+    cursor: pointer;
+  }
+  .nav-item:hover {
+    color: hotpink;
+  }
+  .nav-item a:active {
+    filter: blur(2px);
+  }
+   .nav-item a:visited{
+      color: aqua;
+  }
+  
+  .nav-logo {
+    justify-self: left;
+  }
+  .nav-logo img{
+    padding-left: 25px;
+    width: 120px;
+    height: 40px;
+  }
+
+
+  /* Home Page CSS*/
+  .welcome{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #FFFFF0;
+    color: 'Black';
+    width: 15%;
+    border: solid black 1px;
+  }
+  .site-intro{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 25px;
+  }
+  .intro-header{
+    color: #d10373;
+  }
+  .intro-text li{
+    margin-bottom: 10px;
+  }
+  .demo-intro{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 25px;
+    margin-bottom: 50px;
+  }
+  .demo-header{
+    color: #d10373;
+  }
+  .demo-text li{
+    margin-bottom: 10px;
+  }
+  #login-shot{
+    width: 560px;
+    height: 420px;
+  }
+  #register-shot{
+    width: 640px;
+    height: 560px;
+  }
+  /*Footer CSS*/
+  
+  footer{
+      display: grid;
+      color: #fff;
+      background-color: rgb(75, 74, 74);
+      margin-top: auto;
+  }
+  .home-link{
+    display: grid;
+    color: #fff;
+    transition: 0.25s ease-in;
+    cursor: pointer;
+    text-decoration: underline;
+    height:min-content;
+  }
+  .contact-info{
+    display: flex;
+    left: 0px;
+    height:min-content;
+  }
+
+
+ /*Register and login form css*/
+ 
+ 
+ .register-form-form{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-flow: row;
+  
+  
+ }
+  
+ form{
+   padding-left: 40%;
+   padding-top: 10%;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   /*Find a good font*/
+   color: dimgrey;
+ }
+
+ button{
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 275px;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  background-color: #d10373;
+  cursor: pointer;
+ }
+
+ input{
+  display: flex;
+  justify-content: center;
+  height: 15px;
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid rgb(99, 99, 102);
+ }
+ 
+ .error-occ{
+  padding-left: 37%;
+  padding-top: 1%;
+ }
+ .error-message{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 400px;
+  height: 50px;
+  color: #691911;
+  background-color: #f4d6d2;
+  border-color: #f0c5c1;
+  padding: 15px;
+}
+.acc-exists{
+  color:rgb(65, 63, 63);
+  text-decoration: underline;
+}
+ /*CSS for the results table.*/
+.save-form{
+    padding-left: 0;
+    padding-top: 20px;
+}
+.save-button{
+  display: flex;
+  float: right;
+  margin-right: 25px;
+  
+}
+ .results-table{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: center;
+ }
+ .results-table-table{
+   border-collapse: collapse;
+   display: flex;
+   justify-content: center;
+   margin-top: 5%;
+ }
+ 
+ td {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 2px solid dimgrey;
+  padding: 5px;
+  height: 30px;
+  width: 200px;
+  background-color: white;
+  color: black;
+}
+ th {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   border: 2px solid dimgrey;
+   padding: 5px;
+   height: 30px;
+   width: 200px;
+   background-color:#d10373;
+   color: white;
+ }
+ input{
+   border: 1px solid black;
+ }
+ .module-row2 td, .module-row2 td input{
+   background-color: #ccc;
+ }
+
+ .results-button{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+ }
+ .results-button-button{
+  display: flex;
+  justify-content: center;
+ }
+ .results-details{
+  margin-left: auto;
+  margin-right: auto;
+ }
+ .award-text{
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 20px;
+ }
